@@ -1,0 +1,28 @@
+# config.yaml
+
+######################### input files and reference files ###############################################
+FASTQ: /home/raiman/AflR_20241114/fastq/
+fqsuffix: fq
+gff: /home/raiman/genome_info/Anidulans/FungiDB-65_AnidulansFGSCA4.gff
+fasta: /home/raiman/genome_info/Anidulans/FungiDB-65_AnidulansFGSCA4_Genome.fasta
+gfolder: /home/raiman/genome_info/Anidulans/
+gaf: /home/raiman/reference/Anidulans/FungiDB-65_AnidulansFGSCA4_Curated_GO.gaf
+obo: /home/raiman/reference/go-basic.obo
+KEGG_relation: /home/raiman/reference/Anidulans/ani_KEGG_info.csv
+############################ mapping parameters  #####################################################
+ncores : 4
+HT2index: /home/raiman/genome_info/Anidulans/Anidulans_hisat2_index
+trim5: 8
+############################## call peaks parameters  #################################################
+genomesize: 3e7
+extsize: 200
+############################## selectpeak parameters  #################################################
+h_t: 20 #high quality peak threshold, Peaks with summit bdg values greater than "h_t" will be classified as high quality.
+############################### peak annotation parameters #############################################
+type1_method: ATG
+d1: 2000
+d2: 500
+d_r: 1.5
+################################# meme parameters  ################################################
+db: /home/raiman/reference/motif_databases/JASPAR/JASPAR2022_CORE_fungi_non-redundant_v2.meme
+output: /home/raiman/AflR_20241114/output
