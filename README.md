@@ -3,7 +3,7 @@
 ## Previous Version
 https://github.com/RaimenChan/ChIPseq_pipeline
 
-This version has many changes:
+## This version has many changes:
 1. The previous version required two replicates as input and selected peaks that appeared in both replicates for further analysis. This version analyzes each sample individually, without considering biological replicates.
 2. Removed chipr analysis, correlation analysis, etc. These analyses require biological replicates.
 3. Added MEME-ChIP.
